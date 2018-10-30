@@ -1,7 +1,11 @@
 import './index.scss';
-import 'bootstrap';
 import $ from 'jquery';
+import 'bootstrap';
 
-$('#click').on('click', () => {
-  $('#append').append('<p>I have changed</p>');
-});
+const buttonClick = () => {
+  $('#click').on('click', () => {
+    $('#append').append('<p>I\'ve been clicked</p>');
+  });
+};
+
+buttonClick();
